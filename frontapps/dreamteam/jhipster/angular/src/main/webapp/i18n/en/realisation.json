@@ -1,0 +1,26 @@
+
+{
+    "bprApp": {
+        "realisation" : {
+            "home": {
+                "title": "Realisations",
+                "createLabel": "Create a new Realisation",
+                "createOrEditLabel": "Create or edit a Realisation",
+                "search": "Search for Realisation"
+            },
+            "created": "A new Realisation is created with identifier {{ param }}",
+            "updated": "A Realisation is updated with identifier {{ param }}",
+            "deleted": "A Realisation is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Realisation {{ id }}?"
+            },
+            "detail": {
+                "title": "Realisation"
+            },
+            "creationDate": "Creation Date",
+            "actionDate": "Action Date",
+            "actionType": "Action Type",
+            "description": "Description"
+        }
+    }
+}

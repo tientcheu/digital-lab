@@ -1,0 +1,15 @@
+
+spring:
+    datasource:
+        url: jdbc:postgresql://abidjan:5432/postgres
+        username: postgres
+        password: password
+        continue-on-error: true
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        show-sql: true
+        hibernate:
+          ddl-auto: update
+
+server:
+    port: 8080

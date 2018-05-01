@@ -1,0 +1,13 @@
+{
+    "bprApp": {
+        "ActionType" : {
+            "null": "",
+            "MANAGEMENT": "MANAGEMENT",
+            "CONTROL": "CONTROL",
+            "MARKETING": "MARKETING",
+            "SALES": "SALES",
+            "TECHNICAL": "TECHNICAL",
+            "LOGISTIQUE": "LOGISTIQUE"
+        }
+    }
+}

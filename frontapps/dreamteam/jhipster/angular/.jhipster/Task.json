@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength"
+            ],
+            "fieldValidateRulesMinlength": "5"
+        },
+        {
+            "fieldName": "startDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "endDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "assignee",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180303182613",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "task",
+    "jpaMetamodelFiltering": false,
+    "pagination": "infinite-scroll"
+}

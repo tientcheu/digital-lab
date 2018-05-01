@@ -1,0 +1,16 @@
+{
+    "bprApp": {
+        "AttachmentType" : {
+            "null": "",
+            "FILE": "FILE",
+            "MAIL": "MAIL",
+            "IMAGE": "IMAGE",
+            "AUDIO": "AUDIO",
+            "VIDEO": "VIDEO",
+            "PDF": "PDF",
+            "EXCELL": "EXCELL",
+            "WORLD": "WORLD",
+            "LINK": "LINK"
+        }
+    }
+}

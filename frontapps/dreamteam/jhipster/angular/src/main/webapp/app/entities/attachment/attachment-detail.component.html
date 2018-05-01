@@ -1,0 +1,34 @@
+
+<div *ngIf="attachment">
+    <h2><span jhiTranslate="bprApp.attachment.detail.title">Attachment</span> {{attachment.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="bprApp.attachment.creationDate">Creation Date</span></dt>
+        <dd>
+            <span>{{attachment.creationDate | date:'medium'}}</span>
+        </dd>
+        <dt><span jhiTranslate="bprApp.attachment.description">Description</span></dt>
+        <dd>
+            <span>{{attachment.description}}</span>
+        </dd>
+        <dt><span jhiTranslate="bprApp.attachment.attachmentType">Attachment Type</span></dt>
+        <dd>
+            <span jhiTranslate="{{'bprApp.AttachmentType.' + attachment.attachmentType}}">{{attachment.attachmentType}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'attachment/'+ attachment.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

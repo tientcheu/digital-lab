@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "creationDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "attachmentType",
+            "fieldType": "AttachmentType",
+            "fieldValues": "FILE,MAIL,IMAGE,AUDIO,VIDEO,PDF,EXCELL,WORLD,LINK"
+        }
+    ],
+    "changelogDate": "20180303183255",
+    "javadoc": "Attachment entity.\n@author ben.",
+    "entityTableName": "attachment",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

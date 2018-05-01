@@ -1,0 +1,12 @@
+
+spring:
+    application:
+        name: kyf
+info:
+    project:
+        version: #project.version#
+
+server:
+    port: 8080
+
+application:

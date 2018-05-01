@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "creationDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "actionDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "actionType",
+            "fieldType": "ActionType",
+            "fieldValues": "MANAGEMENT,CONTROL,MARKETING,SALES,TECHNICAL,LOGISTIQUE"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180303183253",
+    "javadoc": "Action entity.\n@author ben.",
+    "entityTableName": "realisation",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

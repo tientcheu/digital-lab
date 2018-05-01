@@ -1,0 +1,26 @@
+
+{
+    "bprApp": {
+        "depense" : {
+            "home": {
+                "title": "Depenses",
+                "createLabel": "Maak een nieuwe Depense",
+                "createOrEditLabel": "Maak of wijzig een Depense",
+                "search": "Search for Depense"
+            },
+            "created": "A new Depense is created with identifier {{ param }}",
+            "updated": "A Depense is updated with identifier {{ param }}",
+            "deleted": "A Depense is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Depense {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Depense"
+            },
+            "creationDate": "Creation Date",
+            "eventDate": "Event Date",
+            "description": "Description",
+            "statut": "Statut"
+        }
+    }
+}

@@ -1,0 +1,58 @@
+/**
+   * Person entity.
+   * @author ben.
+   */
+   entity Person {
+      name String,
+      title String,
+      email String,
+      phoneNumber String,
+      description String
+   }
+
+   enum ActionType {
+       MANAGEMENT, CONTROL, MARKETING, SALES, TECHNICAL, LOGISTIQUE
+   }
+
+   /**
+    * Action entity.
+    * @author ben.
+    */
+    entity Realisation {
+      creationDate Instant,
+      actionDate Instant,
+      actionType ActionType,
+      description String
+    }
+
+   enum BusinessDocumentStatut {
+       SUBMITTED, APPROVED, REJECTED, CANCELED
+   }
+
+   /**
+    * Depense entity.
+    * @author ben.
+    */
+    entity Depense {
+      creationDate Instant,
+      eventDate Instant,
+      description String,
+      statut BusinessDocumentStatut
+    }
+
+   enum AttachmentType {
+       FILE, MAIL, IMAGE, AUDIO, VIDEO, PDF, EXCELL, WORLD, LINK
+   }
+
+      /**
+    * Attachment entity.
+    * @author ben.
+    */
+    entity Attachment {
+    	creationDate Instant,
+    	description String,
+        attachmentType AttachmentType
+    }
+
+    paginate Realisation with infinite-scroll
+    paginate Person with pagination

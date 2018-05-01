@@ -1,0 +1,27 @@
+
+{
+    "bprApp": {
+        "person" : {
+            "home": {
+                "title": "People",
+                "createLabel": "Maak een nieuwe Person",
+                "createOrEditLabel": "Maak of wijzig een Person",
+                "search": "Search for Person"
+            },
+            "created": "A new Person is created with identifier {{ param }}",
+            "updated": "A Person is updated with identifier {{ param }}",
+            "deleted": "A Person is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Person {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Person"
+            },
+            "name": "Name",
+            "title": "Title",
+            "email": "Email",
+            "phoneNumber": "Phone Number",
+            "description": "Description"
+        }
+    }
+}

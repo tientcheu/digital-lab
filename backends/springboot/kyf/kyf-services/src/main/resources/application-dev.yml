@@ -1,0 +1,19 @@
+
+spring:
+    datasource:
+        url: jdbc:h2:file:./target/h2db/db/kyf;DB_CLOSE_DELAY=-1
+        username: sa
+        password:
+        continue-on-error: true
+        driver-class-name: org.h2.Driver
+    h2:
+        console:
+            enabled: false
+    jpa:
+        show-sql: true
+        hibernate:
+          ddl-auto: create-drop
+        database: h2
+
+server:
+    port: 8085

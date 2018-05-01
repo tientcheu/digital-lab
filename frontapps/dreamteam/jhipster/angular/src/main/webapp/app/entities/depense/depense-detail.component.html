@@ -1,0 +1,38 @@
+
+<div *ngIf="depense">
+    <h2><span jhiTranslate="bprApp.depense.detail.title">Depense</span> {{depense.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="bprApp.depense.creationDate">Creation Date</span></dt>
+        <dd>
+            <span>{{depense.creationDate | date:'medium'}}</span>
+        </dd>
+        <dt><span jhiTranslate="bprApp.depense.eventDate">Event Date</span></dt>
+        <dd>
+            <span>{{depense.eventDate | date:'medium'}}</span>
+        </dd>
+        <dt><span jhiTranslate="bprApp.depense.description">Description</span></dt>
+        <dd>
+            <span>{{depense.description}}</span>
+        </dd>
+        <dt><span jhiTranslate="bprApp.depense.statut">Statut</span></dt>
+        <dd>
+            <span jhiTranslate="{{'bprApp.BusinessDocumentStatut.' + depense.statut}}">{{depense.statut}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'depense/'+ depense.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

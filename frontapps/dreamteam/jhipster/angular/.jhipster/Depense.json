@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "creationDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "eventDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statut",
+            "fieldType": "BusinessDocumentStatut",
+            "fieldValues": "SUBMITTED,APPROVED,REJECTED,CANCELED"
+        }
+    ],
+    "changelogDate": "20180303183254",
+    "javadoc": "Depense entity.\n@author ben.",
+    "entityTableName": "depense",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

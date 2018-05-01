@@ -1,0 +1,25 @@
+
+{
+    "bprApp": {
+        "attachment" : {
+            "home": {
+                "title": "Attachments",
+                "createLabel": "Maak een nieuwe Attachment",
+                "createOrEditLabel": "Maak of wijzig een Attachment",
+                "search": "Search for Attachment"
+            },
+            "created": "A new Attachment is created with identifier {{ param }}",
+            "updated": "A Attachment is updated with identifier {{ param }}",
+            "deleted": "A Attachment is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Attachment {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Attachment"
+            },
+            "creationDate": "Creation Date",
+            "description": "Description",
+            "attachmentType": "Attachment Type"
+        }
+    }
+}

@@ -1,0 +1,55 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myRealisationLabel" jhiTranslate="bprApp.realisation.home.createOrEditLabel">Create or edit a Realisation</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!realisation.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="realisation.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="bprApp.realisation.creationDate" for="field_creationDate">Creation Date</label>
+            <div class="d-flex">
+                <input id="field_creationDate" type="datetime-local" class="form-control" name="creationDate" [(ngModel)]="realisation.creationDate"
+                />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="bprApp.realisation.actionDate" for="field_actionDate">Action Date</label>
+            <div class="d-flex">
+                <input id="field_actionDate" type="datetime-local" class="form-control" name="actionDate" [(ngModel)]="realisation.actionDate"
+                />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="bprApp.realisation.actionType" for="field_actionType">Action Type</label>
+            <select class="form-control" name="actionType" [(ngModel)]="realisation.actionType" id="field_actionType" >
+                <option value="MANAGEMENT">{{'bprApp.ActionType.MANAGEMENT' | translate}}</option>
+                <option value="CONTROL">{{'bprApp.ActionType.CONTROL' | translate}}</option>
+                <option value="MARKETING">{{'bprApp.ActionType.MARKETING' | translate}}</option>
+                <option value="SALES">{{'bprApp.ActionType.SALES' | translate}}</option>
+                <option value="TECHNICAL">{{'bprApp.ActionType.TECHNICAL' | translate}}</option>
+                <option value="LOGISTIQUE">{{'bprApp.ActionType.LOGISTIQUE' | translate}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="bprApp.realisation.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                [(ngModel)]="realisation.description" />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

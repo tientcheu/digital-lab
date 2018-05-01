@@ -1,0 +1,11 @@
+{
+    "bprApp": {
+        "BusinessDocumentStatut" : {
+            "null": "",
+            "SUBMITTED": "SUBMITTED",
+            "APPROVED": "APPROVED",
+            "REJECTED": "REJECTED",
+            "CANCELED": "CANCELED"
+        }
+    }
+}
