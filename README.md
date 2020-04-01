@@ -21,4 +21,3 @@ Digital-lab participe de mon approche veille technologique
 
 ## Buts et objectifs du projet
 ## Comment c'est organisé ?
-## Comment c'est organisé ?
